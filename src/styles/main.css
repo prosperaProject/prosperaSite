@@ -1,3 +1,120 @@
-@import url("./pages/_pagesTemplate.scss");
-@import url("./posts/_postsTemplate.scss");
-@import url("./menu/_menu.scss");/*# sourceMappingURL=main.css.map */
+.App {
+  background: rgb(145, 145, 145);
+  height: 100vh;
+}
+
+.body {
+  position: relative;
+}
+
+.menuContainer {
+  position: absolute;
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 23px;
+  padding-right: 23px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  z-index: 10;
+}
+.menuContainer .linksContainer ul {
+  display: flex;
+  width: 800px;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.menuContainer .linksContainer ul:hover {
+  cursor: pointer;
+}
+.menuContainer .linksContainer ul:hover li:active {
+  cursor: pointer;
+  border-bottom: 1px solid #EE7623;
+  -webkit-animation: none;
+          animation: none;
+}
+.menuContainer .logoContainer {
+  width: 20%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.menuContainer .buttonsContainer {
+  width: 20%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.menuContainer .buttonsContainer button {
+  width: 146px;
+  height: 35px;
+  left: 1214px;
+  top: 10px;
+  border: 1px solid;
+  box-sizing: border-box;
+  outline: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .menuContainer .linksContainer ul {
+    display: none;
+  }
+  .menuContainer .buttonsContainer {
+    display: none;
+  }
+}
+
+.headerBody {
+  position: relative;
+}
+.headerBody .containerVideo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+}
+.headerBody .containerVideo video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+.headerBody .containerVideo .overlay {
+  position: absolute;
+  color: white;
+  width: 50%;
+  font-size: 3vw;
+  margin-top: 10%;
+  margin-left: 10%;
+  font-family: "Poppins", sans-serif;
+}
+.headerBody .containerVideo .overlay p {
+  font-size: 1.5vw;
+}
+.headerBody .containerVideo .index {
+  position: absolute;
+  color: white;
+  width: 10%;
+  height: 28px;
+  font-size: 3vw;
+  margin-top: 7%;
+  font-family: "Poppins", sans-serif;
+  background: #FC6240;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+}
+.headerBody .containerVideo .index p {
+  font-size: 1vw;
+}/*# sourceMappingURL=main.css.map */
