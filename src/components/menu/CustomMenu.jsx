@@ -1,3 +1,4 @@
+// You can edit styles in styles/menu
 import React from 'react'
 
 export const CustomMenu = () => {

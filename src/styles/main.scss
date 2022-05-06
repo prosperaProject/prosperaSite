@@ -1,4 +1,10 @@
 @import './pages//pagesTemplate';
 @import './posts/postsTemplate';
 @import './menu/menu';
-@import './header/header'
+@import './header/header';
+@import './graphic/graphic';
+
+.App{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,130 @@
+.customGraphic{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    .title{
+        align-self: center;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 2.7vw;
+        margin-bottom: 40px;
+        color: #505D68;
+    }
+    .infoContainer{
+        display: flex;
+        align-self: center;
+        width: 65%;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .services{
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+            padding-top: 50px;
+            font-family: sans-serif;
+            h4{
+                font-size: 1.5vw;
+                margin-bottom: 10px;
+            }
+            ul{
+                font-family: sans-serif;
+            }
+            .bussiness{
+                h4{
+                    color: #36B0C9;
+                }
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            .governance{
+                h4{
+                    color: #EE7623;
+                }
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+        .imageSrc{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            img{
+                width: 100%;
+                object-fit: cover;
+                max-width: 400px;
+            }
+        }
+        // Mobile view
+        @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 425px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            .services{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                h4{
+                    font-size: 7vw;
+                }
+                .bussiness{
+                    margin-bottom: 30px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                .governance{
+                    margin-bottom: 30px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+            }
+            .imageSrc{
+                width: 100%;
+            }
+        }
+        // Tablet view
+        @media only screen 
+        and (min-device-width: 426px) 
+        and (max-device-width: 768px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            .services{
+                width: 100%;
+            }
+            .imageSrc{
+                width: 100%;
+            }
+        }
+        // Desktop and laptop view
+        @media only screen 
+        and (min-device-width: 769px) 
+        and (max-device-width: 3000px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            .imageSrc{
+                width: 50%;
+            }
+        }
+    }
+    button{
+        background: #EE7623;
+        border-radius: 50px;
+        height: 40px;
+        width: 10%;
+        outline: none;
+        border: none;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    
+}
